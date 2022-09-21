@@ -32,18 +32,9 @@
             <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <meta-data android:name="com.google.android.gms.version"
-                       android:value="@integer/google_play_services_version" />
-        </config-file>
-
         <source-file src="src/android/YandexAdsPlugin.java"
                      target-dir="src/io/luzh/cordova/plugin" />
         <framework src="src/android/yandexads.gradle" custom="true" type="gradleReference" />
-
-        <framework src="com.android.support:support-v4:+" />
-        <framework src="com.android.support:recyclerview-v7:27.1.1" />
-
     </platform>
 
     <platform name="ios">
@@ -69,20 +60,7 @@
         </podspec>
 
         <framework src="YandexMobileAds.framework" />
-        <framework src="YandexMobileMetrica.framework" />
 
         <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
-<!--        <preference name="UseSwiftLanguageVersion" value="5" />-->
-<!--        <preference name="UseLegacySwiftLanguageVersion" value="true" />-->
-
-<!--        <framework src="Foundation.framework" />-->
-<!--        <framework src="CoreLocation.framework" />-->
-<!--        <framework src="CoreTelephony.framework" />-->
-<!--        <framework src="CoreMedia.framework" />-->
-<!--        <framework src="SystemConfiguration.framework" />-->
-<!--        <framework src="StoreKit.framework" />-->
-<!--        <framework src="AdSupport.framework" />-->
-<!--        <framework src="SafariServices.framework" />-->
-<!--        <framework src="AVFoundation.framework" />-->
     </platform>
 </plugin>
