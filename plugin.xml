@@ -26,7 +26,6 @@
             </feature>
             <preference name="android-gradleVersion" value="8.4" />
             <preference name="android-minSdkVersion" value="22" />
-            <preference name="android-targetSdkVersion" value="34" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
